@@ -1,0 +1,21 @@
+version: '2'
+
+services:
+  s1:
+    image: nginx
+    networks:
+     - n1
+  s2:
+    image: nginx
+    networks:
+     - n2
+  br:
+    image: nginx
+    privileged: true
+    networks:
+     - n1
+     - n2
+
+networks:
+  n1:
+  n2:

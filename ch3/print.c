@@ -59,7 +59,7 @@ int PrintEtherHeader(struct ether_header *eh, FILE *fp) {
             break;
     }
 
-    return 0;
+    return (0);
 }
 
 int PrintArp(struct ether_arp *arp, FILE *fp) {
